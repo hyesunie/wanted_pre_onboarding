@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Toggle from "./component/Toggle";
+import Modal from "./component/Modal";
 
 function App() {
   const [state, setState] = useState("init");
@@ -11,6 +12,9 @@ function App() {
     },
     toggle: () => {
       return <Toggle></Toggle>;
+    },
+    modal: () => {
+      return <Modal></Modal>;
     },
   };
 
@@ -31,6 +35,14 @@ function App() {
             id="toggle"
           >
             Toggle
+          </button>
+          <button
+            onClick={(e) => {
+              handleClick(e);
+            }}
+            id="modal"
+          >
+            Modal
           </button>
         </div>
         <div className="viewport-wrapper">{router[state]()}</div>
