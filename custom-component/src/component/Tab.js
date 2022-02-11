@@ -12,7 +12,7 @@ function Tab() {
   };
 
   const clickTabStyle = {
-    "background-color": "#fbe158",
+    backgroundColor: "#fbe158",
     color: "rgb(70, 64, 54)",
   };
 

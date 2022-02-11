@@ -3,6 +3,7 @@ import "./App.css";
 import Toggle from "./component/Toggle";
 import Modal from "./component/Modal";
 import Tab from "./component/Tab";
+import Tag from "./component/Tag";
 
 import imageLogo from "./image/LOGO.png";
 
@@ -13,19 +14,14 @@ function App() {
     init: () => {
       return <h2> 위의 버튼을 눌러주세요. </h2>;
     },
-    toggle: () => {
-      return <Toggle></Toggle>;
-    },
-    modal: () => {
-      return <Modal></Modal>;
-    },
-    tab: () => {
-      return <Tab></Tab>;
-    },
+    toggle: () => <Toggle></Toggle>,
+    modal: () => <Modal></Modal>,
+    tab: () => <Tab></Tab>,
+    tag: () => <Tag></Tag>,
   };
 
   const clickButtonStyle = {
-    "background-color": "#fbe158",
+    backgroundColor: "#fbe158",
     color: "rgb(70, 64, 54)",
   };
 
@@ -67,6 +63,15 @@ function App() {
             style={state === "tab" ? clickButtonStyle : {}}
           >
             Tab
+          </button>
+          <button
+            onClick={(e) => {
+              handleClick(e);
+            }}
+            id="tag"
+            style={state === "tag" ? clickButtonStyle : {}}
+          >
+            Tag
           </button>
         </div>
         <div className="viewport-wrapper">{router[state]()}</div>
