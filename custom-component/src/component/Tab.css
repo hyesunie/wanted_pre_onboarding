@@ -16,7 +16,7 @@
 }
 
 .viewport__tab__content {
-  width: 80%;
+  width: 70%;
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
   font-size: 2.5em;
-  color: rgb(155, 101, 0);
+  color: rgb(70, 64, 54);
   font-weight: 550;
   display: flex;
   flex-direction: column;

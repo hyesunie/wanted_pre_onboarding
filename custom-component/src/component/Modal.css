@@ -23,8 +23,8 @@
 .modal-button {
   border: none;
   font-size: 2.5em;
-  color: white;
-  background-color: rgb(155, 101, 0);
+  color: rgb(70, 64, 54);
+  background-color: #fbe158;
   cursor: pointer;
   padding: 4%;
   border-radius: 20px;
@@ -82,5 +82,5 @@
 .modal-overlay__content__text {
   font-size: 3em;
   font-weight: 600;
-  color: rgb(155, 101, 0);
+  color: rgb(70, 64, 54);
 }

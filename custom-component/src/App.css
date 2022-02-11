@@ -16,10 +16,14 @@ html,
 
 header {
   font-size: 5em;
-  height: 7%;
+  height: 15%;
   width: 100%;
   text-align: center;
-  padding: 0.5em 0 0.5em 0;
+}
+
+header img {
+  width: 2em;
+  object-fit: contain;
 }
 
 main {
@@ -37,5 +41,29 @@ button {
 
 .button-wrapper {
   width: 70%;
-  height: 30%;
+  height: 25%;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-wrapper button {
+  font-size: 2em;
+  margin: 0.5em;
+  padding: 0.6em;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(224, 223, 220);
+  color: #807230;
+
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.viewport-wrapper {
+  width: 60em;
+  height: 43em;
+  font-size: 1em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

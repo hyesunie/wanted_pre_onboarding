@@ -12,8 +12,8 @@ function Tab() {
   };
 
   const clickTabStyle = {
-    "background-color": "rgb(155, 101, 0)",
-    color: "white",
+    "background-color": "#fbe158",
+    color: "rgb(70, 64, 54)",
   };
 
   const handleTabClick = (e) => {

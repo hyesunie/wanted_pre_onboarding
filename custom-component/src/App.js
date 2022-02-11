@@ -4,6 +4,8 @@ import Toggle from "./component/Toggle";
 import Modal from "./component/Modal";
 import Tab from "./component/Tab";
 
+import imageLogo from "./image/LOGO.png";
+
 function App() {
   const [state, setState] = useState("init");
 
@@ -22,6 +24,11 @@ function App() {
     },
   };
 
+  const clickButtonStyle = {
+    "background-color": "#fbe158",
+    color: "rgb(70, 64, 54)",
+  };
+
   const handleClick = (e) => {
     const key = e.target.id;
     setState(key);
@@ -29,7 +36,9 @@ function App() {
 
   return (
     <div className="app">
-      <header>Hyesunie Project</header>
+      <header>
+        <img src={imageLogo} alt="logo" />
+      </header>
       <main>
         <div className="button-wrapper">
           <button
@@ -37,6 +46,7 @@ function App() {
               handleClick(e);
             }}
             id="toggle"
+            style={state === "toggle" ? clickButtonStyle : {}}
           >
             Toggle
           </button>
@@ -45,6 +55,7 @@ function App() {
               handleClick(e);
             }}
             id="modal"
+            style={state === "modal" ? clickButtonStyle : {}}
           >
             Modal
           </button>
@@ -53,6 +64,7 @@ function App() {
               handleClick(e);
             }}
             id="tab"
+            style={state === "tab" ? clickButtonStyle : {}}
           >
             Tab
           </button>
