@@ -4,6 +4,7 @@ import Toggle from "./component/Toggle";
 import Modal from "./component/Modal";
 import Tab from "./component/Tab";
 import Tag from "./component/Tag";
+import Autocomplete from "./component/Autocomplete";
 import ClickToEdit from "./component/ClickToEdit";
 
 import imageLogo from "./image/LOGO.png";
@@ -19,6 +20,7 @@ function App() {
     modal: () => <Modal></Modal>,
     tab: () => <Tab></Tab>,
     tag: () => <Tag></Tag>,
+    autocomplete: () => <Autocomplete></Autocomplete>,
     clickToEdit: () => <ClickToEdit></ClickToEdit>,
   };
 
@@ -74,6 +76,15 @@ function App() {
             style={state === "tag" ? clickButtonStyle : {}}
           >
             Tag
+          </button>
+          <button
+            onClick={(e) => {
+              handleClick(e);
+            }}
+            id="autocomplete"
+            style={state === "autocomplete" ? clickButtonStyle : {}}
+          >
+            Autocomplete
           </button>
           <button
             onClick={(e) => {
