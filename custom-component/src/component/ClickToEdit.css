@@ -1,0 +1,55 @@
+.viewport__click-to-edit {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.viewport__click-to-edit__title {
+  font-size: 3em;
+  width: 100%;
+  height: 10%;
+  padding: 0.5em 0 0.5em 0;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.viewport__click-to-edit__content {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-wrapper,
+.age-wrapper {
+  font-size: 1.7em;
+  margin: 1em;
+}
+
+.name-wrapper label,
+.age-wrapper label {
+  margin-right: 0.9em;
+}
+
+.name-wrapper input,
+.age-wrapper input {
+  font-size: 1em;
+  border-radius: 3px;
+  border: solid 0.08em rgb(216, 216, 216);
+}
+
+.name-wrapper input:focus,
+.age-wrapper input:focus {
+  outline: none;
+  border: solid 0.2em #fbe158;
+}
+
+.viewport__click-to-edit__content h2 {
+  margin-top: 3em;
+  font-size: 1.6em;
+  font-weight: 600;
+}

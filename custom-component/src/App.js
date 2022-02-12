@@ -4,6 +4,7 @@ import Toggle from "./component/Toggle";
 import Modal from "./component/Modal";
 import Tab from "./component/Tab";
 import Tag from "./component/Tag";
+import ClickToEdit from "./component/ClickToEdit";
 
 import imageLogo from "./image/LOGO.png";
 
@@ -18,6 +19,7 @@ function App() {
     modal: () => <Modal></Modal>,
     tab: () => <Tab></Tab>,
     tag: () => <Tag></Tag>,
+    clickToEdit: () => <ClickToEdit></ClickToEdit>,
   };
 
   const clickButtonStyle = {
@@ -72,6 +74,15 @@ function App() {
             style={state === "tag" ? clickButtonStyle : {}}
           >
             Tag
+          </button>
+          <button
+            onClick={(e) => {
+              handleClick(e);
+            }}
+            id="clickToEdit"
+            style={state === "clickToEdit" ? clickButtonStyle : {}}
+          >
+            ClickToEdit
           </button>
         </div>
         <div className="viewport-wrapper">{router[state]()}</div>
