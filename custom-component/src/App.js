@@ -13,7 +13,7 @@ function App() {
 
   const router = {
     init: () => {
-      return <h2> 위의 버튼을 눌러주세요. </h2>;
+      return <h1> 위의 버튼을 눌러주세요. </h1>;
     },
     toggle: () => <Toggle></Toggle>,
     modal: () => <Modal></Modal>,
